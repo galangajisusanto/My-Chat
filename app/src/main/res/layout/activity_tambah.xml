@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.galang.mychat.TambahActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pengguna"
+        android:id="@+id/txtnama"
+        />
+
+    <EditText
+        android:id="@+id/edtnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="masukan nama"
+        android:textColorHint="@android:color/holo_red_light"
+        android:ems="10"
+
+        />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pengguna"
+        android:id="@+id/txtcontent"
+        />
+    <EditText
+        android:id="@+id/edtchat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="masukan chat"
+        android:textColorHint="@android:color/holo_red_light"
+        android:ems="10"
+
+        />
+
+    <Button
+        android:id="@+id/simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:text="Kirim Pesan"
+        android:onClick="kirimPesan"/>
+
+
+</LinearLayout>
