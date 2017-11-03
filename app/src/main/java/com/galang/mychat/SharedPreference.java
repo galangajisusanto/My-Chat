@@ -2,7 +2,7 @@ package com.galang.mychat;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.provider.Contacts;
+
 
 import com.google.gson.Gson;
 

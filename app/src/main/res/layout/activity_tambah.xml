@@ -8,45 +8,58 @@
     tools:context="com.galang.mychat.TambahActivity">
 
     <TextView
+        android:layout_marginLeft="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nama Pengguna"
         android:id="@+id/txtnama"
         />
 
-    <EditText
+
+    <com.rengwuxian.materialedittext.MaterialEditText
         android:id="@+id/edtnama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="masukan nama"
-        android:textColorHint="@android:color/holo_red_light"
-        android:ems="10"
-
+        app:met_floatingLabel="highlight"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:met_floatingLabelText="Nama Anda"
+        android:hint="Masukan Nama"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignParentTop="true"
         />
 
     <TextView
+        android:layout_marginLeft="5dp"
         android:layout_marginTop="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama Pengguna"
+        android:text="Chat"
         android:id="@+id/txtcontent"
         />
-    <EditText
+
+    <com.rengwuxian.materialedittext.MaterialEditText
         android:id="@+id/edtchat"
+        android:layout_marginLeft="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="masukan chat"
-        android:textColorHint="@android:color/holo_red_light"
-        android:ems="10"
-
+        app:met_floatingLabel="highlight"
+        android:layout_marginRight="5dp"
+        app:met_floatingLabelText="Chat Anda"
+        android:hint="Masukan Chat"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignParentTop="true"
         />
+
 
     <Button
         android:id="@+id/simpan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-
+        style="@style/Widget.AppCompat.Button.Colored"
         android:text="Kirim Pesan"
         android:onClick="kirimPesan"/>
 

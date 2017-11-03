@@ -14,13 +14,14 @@ import java.util.Calendar;
 import java.util.List;
 import com.google.gson.Gson;
 import com.galang.mychat.SharedPreference;
+import com.rengwuxian.materialedittext.MaterialEditText;
 
 public class TambahActivity extends AppCompatActivity {
 
     List<orang> chatfix = new ArrayList<orang>();
 
-    EditText namaku;
-    EditText chatku;
+    MaterialEditText namaku;
+    MaterialEditText chatku;
     Calendar c1= Calendar.getInstance();
     SimpleDateFormat sdf1=new SimpleDateFormat("d/M/yyy");
     String waktu;
@@ -34,8 +35,8 @@ public class TambahActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tambah);
-        namaku=(EditText)findViewById(R.id.edtnama);
-        chatku=(EditText)findViewById(R.id.edtchat);
+        namaku=(MaterialEditText) findViewById(R.id.edtnama);
+        chatku=(MaterialEditText) findViewById(R.id.edtchat);
         sharedPreference=new SharedPreference();
         chatfix=sharedPreference.getValue(context);
 
